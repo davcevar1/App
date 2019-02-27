@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  h1= title
+  each persona in artista
+    p #{persona.nombre} #{persona.apellido}
+
+  mixin nombreMi
+    p este #{tittle} esta adentro
+  +nombreMi
